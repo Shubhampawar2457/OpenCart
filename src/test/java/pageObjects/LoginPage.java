@@ -27,8 +27,17 @@ public void setemail(String email) {
 	txtemail.sendKeys(email);
 }
 
+public void clearemail()
+{
+	txtemail.clear();
+}
+
 public void setpassword(String pwd) {
 	txtpassword.sendKeys(pwd);
+}
+
+public void clearpassword() {
+	txtpassword.clear();
 }
 
 public void clickbtnLogin() {

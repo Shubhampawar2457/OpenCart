@@ -24,7 +24,7 @@ public class TC_001_AccountRegisterationTest extends BaseClass{
 		AccountRegisterationPage regpage= new AccountRegisterationPage(driver);
 		regpage.setfirstname(randomString().toUpperCase());
 		regpage.setlastname(randomString().toUpperCase());
-		regpage.setemail(randomString()+"@gmail.com");
+		//regpage.setemail(randomString()+"@gmail.com");
 		regpage.settelephone(randomNumber());
 		
 		String password=randomAlphaNumeric();

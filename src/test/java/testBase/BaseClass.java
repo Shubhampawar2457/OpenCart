@@ -2,9 +2,10 @@ package testBase;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Date;
+
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 import org.apache.commons.io.FileUtils;
@@ -83,9 +84,9 @@ public class BaseClass {
 	}
 	
 	
-	public String captureScreen(String tname) throws IOException {
+	/*public String captureScreen(String tname) throws IOException {
 
-		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date(1));
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 				
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
@@ -98,11 +99,11 @@ public class BaseClass {
 		}
 		return destination;
 
-	}
+	}*/
 
 
 	
-	/*public String captureScreen(String tname) throws Exception{
+	public String captureScreen(String tname) throws Exception{
 		
 		
 		String timestamp= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -121,7 +122,7 @@ public class BaseClass {
 		
 		return destination;		
 		}
-*/
+
 
 	
 	}

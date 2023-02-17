@@ -25,12 +25,14 @@ public class TC_003_LoginDDT extends BaseClass{
 		logger.info("clicked on login");
 		
 		LoginPage lp=new LoginPage(driver);
+		//lp.clearemail();
 		lp.setemail(email);
 		logger.info("entered email address");
+		//lp.clearpassword();
 		lp.setpassword(password);
 		logger.info("Entered password");
 		lp.clickbtnLogin();
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		MyAccountPage macc=new MyAccountPage(driver);
 		boolean targetpage=macc.isMyAccountPageExist();
 		

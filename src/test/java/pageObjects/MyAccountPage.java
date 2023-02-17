@@ -15,7 +15,7 @@ public class MyAccountPage extends BaseClass {
   @FindBy(xpath="//h2[text()='My Account']")
   WebElement msgHeading;
   
-  @FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']")
+	@FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")
   WebElement lnkLogout;
   
   
